@@ -1,0 +1,12 @@
+body{
+    background-color: skyblue;
+}
+th{
+    background-color: burlywood;
+    text-align: center;
+}
+
+td{
+    background-color: pink;
+    text-align: center;
+}

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% extends 'userapp/base.html' %}
+{% block title_block %}
+<title>Employees Deletion</title>
+{% endblock %}
+{% block body_block %}
+    <div class="container jumbotron" align="center">
+        <h3>Employee Deletion Confirmation Form</h3><hr><br>
+        <form method="POST">
+            {{form.as_p}}
+            {% csrf_token %}
+            <p>Would you like to delete employee: {{employee.ename}}?</p>
+            <input type="submit" value="Yes" class="btn btn-success">
+            <a href="/" class="btn btn-danger">No</a>
+        </form>
+        
+    </div>
+{% endblock %}

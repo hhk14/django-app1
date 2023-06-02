@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% extends 'userapp/base.html' %}
+{% block title_block %}
+<title>Employees Creation/Updation</title>
+{% endblock %}
+{% block body_block %}
+    <div class="container jumbotron" align="center">
+        <h3>Employee Creation/Updation Form</h3><hr><br>
+        <form method="POST">
+            {{form.as_p}}
+            {% csrf_token %}
+            <input type="submit" value="Insert/Update" class="btn btn-success">
+            <a href="/" class="btn btn-danger">Cancel</a>
+        </form>
+        
+    </div>
+{% endblock %}
