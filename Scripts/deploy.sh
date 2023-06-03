@@ -1,10 +1,10 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 # activate the virtual environment
 source ~/venv/bin/activate
 
 # Cd into the project code
-cd /var/www/polling
+cd /var/www/django-app1
 
 # pull the latest codebase
 git pull

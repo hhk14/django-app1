@@ -10,3 +10,6 @@ td{
     background-color: pink;
     text-align: center;
 }
+hr{
+    border-top: 2px red solid;
+}
